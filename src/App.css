@@ -4,6 +4,7 @@ header {
   right: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
 }
 .header-wrapper {
   background-color: #212121;
@@ -35,6 +36,7 @@ nav > ul {
   color: white;
   font-weight: 600;
   transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+  /* transition: all 0.6s linear(0.8, 0, 0.1, 1); */
 }
 
 .nav-link:hover {
@@ -92,9 +94,16 @@ main {
 }
 .box3-items {
   margin: 0 1rem;
+  transition: all 0.3s linear;
 }
-.box3-items h4 {
+.box3-items:hover .box3_img,
+.box3-items:hover .box3_h4 {
+  transform: scale(1.05);
+  color: cadetblue;
+}
+.box3_h4 {
   font-size: 1.33rem;
+  transition: all 0.3s linear;
 }
 .box3-items p {
   font-size: 1rem;
@@ -102,4 +111,5 @@ main {
 .box3_img {
   height: 400px;
   width: 300px;
+  transition: all 0.3s linear;
 }
