@@ -1,12 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { useCallback, useEffect, useRef, useState } from "react";
-import { Link, Outlet, Route, Routes } from "react-router-dom";
+import { useCallback, useEffect, useState } from "react";
 import Link1 from "./components/Link1";
 import Link2 from "./components/Link2";
 import Link3 from "./components/Link3";
 import Link4 from "./components/Link4";
-
+import tree2 from "./image/tree2.jpg";
+import Home from "./components/Home";
+import Nav from "./components/Nav";
 function App() {
   const [ScrollY, setScrollY] = useState(0);
 
@@ -23,63 +23,32 @@ function App() {
       window.removeEventListener("scroll", handleFollow); // addEventListener 함수를 삭제
     };
   }, []);
-
+  const picture_style_d = {
+    width: 200,
+    height: 120,
+    transition: "all 0.6s cubic-bezier(0.86, 0, 0.07, 1)",
+  };
+  const picture_style_s = {
+    width: 130,
+    height: 80,
+    transition: "all 0.6s cubic-bezier(0.86, 0, 0.07, 1)",
+  };
   return (
     <div>
       <header>
         <div className="header-wrapper">
           <div className="logo">
-            <h1>
-              <a href="/">헤더</a>
-            </h1>
+            <picture style={ScrollY > 240 ? picture_style_s : picture_style_d}>
+              <img src={tree2} style={{ width: "100%", height: "100%" }} />
+            </picture>
           </div>
-          <nav>
-            <ul>
-              <li>
-                <a
-                  className={ScrollY <= 1000 ? "nav-link active" : "nav-link "}
-                  href="#link1"
-                >
-                  1번 링크
-                </a>
-              </li>
-              <li>
-                <a
-                  className={
-                    ScrollY > 1000 && ScrollY <= 2000
-                      ? "nav-link active"
-                      : "nav-link "
-                  }
-                  href="#link2"
-                >
-                  2번 링크
-                </a>
-              </li>
-              <li>
-                <a
-                  className={
-                    ScrollY > 2000 && ScrollY <= 3000
-                      ? "nav-link active"
-                      : "nav-link "
-                  }
-                  href="#link3"
-                >
-                  3번 링크
-                </a>
-              </li>
-              <li>
-                <a
-                  className={ScrollY > 3000 ? "nav-link active" : "nav-link "}
-                  href="#link4"
-                >
-                  4번 링크
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <div>
+            <Nav ScrollY={ScrollY} />
+          </div>
         </div>
       </header>
       <main>
+        <Home />
         <Link1 />
         <Link2 />
         <Link3 />

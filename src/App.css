@@ -12,11 +12,8 @@ header {
   align-items: center;
 }
 .logo {
-  width: 200px;
-  height: 80px;
   background-color: aqua;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .logo > h1 > a {
@@ -29,13 +26,17 @@ nav {
 nav > ul {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .nav-link {
-  color: white;
   padding: 0 1rem;
   text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
   font-weight: 600;
+  transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
 }
+
 .nav-link:hover {
   color: aquamarine;
 }
@@ -43,13 +44,12 @@ nav > ul {
   color: cadetblue;
 }
 main {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 .box {
   height: 1000px;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   font-size: 2rem;
   font-weight: 600;
@@ -65,4 +65,41 @@ main {
 }
 .box:nth-child(4) {
   background-color: #f9aa4f;
+}
+.box:nth-child(5) {
+  background-color: #f7982c;
+}
+.box1 {
+  width: 100%;
+  height: 100%;
+}
+.slick-slide img {
+  height: 500px;
+  margin: auto;
+}
+.box2 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #242424;
+  color: white;
+}
+.box3 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box3-items {
+  margin: 0 1rem;
+}
+.box3-items h4 {
+  font-size: 1.33rem;
+}
+.box3-items p {
+  font-size: 1rem;
+}
+.box3_img {
+  height: 400px;
+  width: 300px;
 }
