@@ -1,7 +1,7 @@
 import React from "react";
-import building1 from "../image/building1.jpg";
-import building2 from "../image/building2.jpg";
-import building3 from "../image/building3.jpg";
+import building1 from "../asset/image/building1.jpg";
+import building2 from "../asset/image/building2.jpg";
+import building3 from "../asset/image/building3.jpg";
 
 const Link2 = () => {
   return (

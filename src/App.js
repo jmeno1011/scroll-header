@@ -4,7 +4,7 @@ import Link1 from "./components/Link1";
 import Link2 from "./components/Link2";
 import Link3 from "./components/Link3";
 import Link4 from "./components/Link4";
-import tree2 from "./image/tree2.jpg";
+import tree2 from "./asset/image/tree2.jpg";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
 function App() {

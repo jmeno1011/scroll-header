@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
-import gif1 from "../image/gif/giphy1.gif";
-import gif2 from "../image/gif/giphy2.gif";
-import gif3 from "../image/gif/giphy3.gif";
-import gif4 from "../image/gif/giphy4.gif";
+import gif1 from "../asset/image/gif/giphy1.gif";
+import gif2 from "../asset/image/gif/giphy2.gif";
+import gif3 from "../asset/image/gif/giphy3.gif";
+import gif4 from "../asset/image/gif/giphy4.gif";
 
 const Link1 = () => {
   const settings = {
