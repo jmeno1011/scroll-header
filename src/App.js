@@ -10,6 +10,7 @@ import Nav from "./components/Nav";
 function App() {
   const [ScrollY, setScrollY] = useState(0);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleFollow = useCallback(() => {
     setScrollY(window.pageYOffset); // window 스크롤 값을 ScrollY에 저장
   });
@@ -39,7 +40,7 @@ function App() {
         <div className="header-wrapper">
           <div className="logo">
             <picture style={ScrollY > 240 ? picture_style_s : picture_style_d}>
-              <img src={tree2} style={{ width: "100%", height: "100%" }} />
+              <img src={tree2} style={{ width: "100%", height: "100%" }} alt="tree_logo"/>
             </picture>
           </div>
           <div>

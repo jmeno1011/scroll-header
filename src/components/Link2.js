@@ -9,7 +9,7 @@ const Link2 = () => {
       <div className="box3">
         <div className="box3-items">
           <h2>1. 1번 내용</h2>
-          <img className="box3_img" src={building1} />
+          <img className="box3_img" src={building1} alt="building1"/>
           <div>
             <h4 className="box3_h4">
               내용 설명1 <br />
@@ -23,7 +23,7 @@ const Link2 = () => {
         </div>
         <div className="box3-items">
           <h2>2. 1번 내용</h2>
-          <img className="box3_img" src={building2} />
+          <img className="box3_img" src={building2} alt="building2"/>
           <div>
             <h4 className="box3_h4">
               내용 설명1 <br />
@@ -37,7 +37,7 @@ const Link2 = () => {
         </div>
         <div className="box3-items">
           <h2>3. 1번 내용</h2>
-          <img className="box3_img" src={building3} />
+          <img className="box3_img" src={building3} alt="building3"/>
           <div>
             <h4 className="box3_h4">
               내용 설명1 <br />
